@@ -61,7 +61,7 @@ def search_movie(title, year=None):
         }
     )
 
-    with urllib.request.urlopen(request) as response:
+    with urllib.request.urlopen(request, timeout=10) as response:
         data = json.loads(response.read().decode("utf-8"))
 
     movies = [extract_movie_info(result) for result in data["results"]]

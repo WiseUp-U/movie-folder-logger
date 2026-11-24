@@ -207,7 +207,14 @@ class TestMain(unittest.TestCase):
 
         main()
 
-        mock_process.assert_any_call([], db_path="movies.db")
+        self.assertEqual(mock_process.call_count, 2)
+
+        self.assertTrue(
+            all(
+                not call.args[0]
+                for call in mock_process.call_args_list
+            )
+        )
 
     @patch("main.export_letterboxd_csv")
     @patch("main.review_movies")
