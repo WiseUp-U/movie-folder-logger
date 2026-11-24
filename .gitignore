@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Environment secrets
+.env
+
+# SQLite databases and backups
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Generated application files
+letterboxd_import.csv
+review_report.txt
+movies.json
+movies_backup.json
+
+# Test artifacts
+integration_test_run/
