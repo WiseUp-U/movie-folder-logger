@@ -32,8 +32,8 @@ This project currently uses only Python's standard library. No third-party packa
 1. Clone the repository:
 
    ```bash
-   git clone <YOUR_GITHUB_REPOSITORY_URL>
-   cd movie_logger
+   git clone git@github.com:WiseUp-U/movie-folder-logger.git
+   cd movie-folder-logger
    ```
 
 2. Create a virtual environment:
